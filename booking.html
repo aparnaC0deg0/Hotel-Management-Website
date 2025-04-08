@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hotel Website</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+   <section class="reservation" id="reservation">
+
+      <h1 class="heading">Book Now</h1>
+
+      <form action="">
+
+         <div class="container">
+
+            <div class="box">
+               <p>Name <span>*</span></p>
+               <input type="text" class="input" placeholder="Your Name" id="name">
+            </div>
+
+            <div class="box">
+               <p>Email <span>*</span></p>
+               <input type="email" class="input" placeholder="Your Email" id="email">
+            </div>
+
+            <div class="box">
+               <p>Check In <span>*</span></p>
+               <input type="date" class="input" id="date3">
+            </div>
+
+            <div class="box">
+               <p>Check Out <span>*</span></p>
+               <input type="date" class="input" id="date4">
+            </div>
+
+            <div class="box">
+               <p>Adults <span>*</span></p>
+               <select name="adults" class="input">
+                  <option value="1">1 Adults</option>
+                  <option value="2">2 Adults</option>
+                  <option value="3">3 Adults</option>
+                  <option value="4">4 Adults</option>
+                  <option value="5">5 Adults</option>
+                  <option value="6">6 Adults</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>Children <span>*</span></p>
+               <select name="child" class="input">
+                  <option value="0">0 Child</option>
+                  <option value="1">1 Child</option>
+                  <option value="2">2 Child</option>
+                  <option value="3">3 Child</option>
+                  <option value="4">4 Child</option>
+                  <option value="5">5 Child</option>
+                  <option value="6">6 Child</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>Rooms <span>*</span></p>
+               <select name="rooms" class="input">
+                  <option value="1">1 Rooms</option>
+                  <option value="2">2 Rooms</option>
+                  <option value="3">3 Rooms</option>
+                  <option value="4">4 Rooms</option>
+                  <option value="5">5 Rooms</option>
+                  <option value="6">6 Rooms</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>Room Type <span>*</span></p>
+               <select name="type" class="input">
+                  <option value="1">Exclusive Rooms</option>
+                  <option value="2">Family Rooms</option>
+                  <option value="3">Daily Rooms</option>
+                  <option value="4">Panoramic Rooms</option>
+               </select>
+            </div>
+   
+         </div>
+
+         <input type="submit" value="Check Availability" class="btn" onclick="return checkb()">
+         <!-- my edit -->
+
+
+      </form>
+
+   </section>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+   <script src="mainscript.js"></script>
+
+</body>
+</html>
