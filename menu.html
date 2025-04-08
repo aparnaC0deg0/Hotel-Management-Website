@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Restaurant</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--<style>
+        body{
+            background: url(cuisine2.webp);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 125%;
+            
+        }        
+    </style>-->
+
+    <style>
+        .A{
+          position: relative; 
+          text-align: center; 
+          color: white;
+        }
+        .B
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br>
+    <header>
+
+        <a class="logo"><i class="fas-fa-utensils"></i>MENU</a>
+
+        <nav class="navbar">
+            <a href="indian.html">INDIAN</a>
+            <a href="japanese.html">JAPANESE</a>
+            <a href="thai.html">THAI</a>
+            <a href="french.html">FRENCH</a>
+            <a href="italian.html">ITALIAN</a>
+            
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+
+        <a href="uiproject.html"><i class="fas-fa-utensils"></i>go back</a>
+
+    </header> 
+    <div class="A">
+        <img src="cuisine2.webp" alt="" style="width: 125%;">
+        <div class="B">What's on your plate?</div>
+
+    </div>
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here....."  name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+
+    <script src="script.js"></script>
+</body>
+</html>

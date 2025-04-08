@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+
+    <style>
+
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0  .5rem  1.5rem rgba(0,0,0,.1);
+
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+
+html {
+        font-size: 62.5%;
+        scroll-padding-top: 5.5rem;
+        scroll-behavior: smooth;
+    }
+
+
+section{
+    padding: 2rem;
+}
+
+section:nth-child(even){
+    background: #eee;
+}
+
+.sub-heading {
+    text-align: center;
+    color: green;
+    font-size: 2rem;
+    padding-top: 1rem;
+
+}
+
+.heading {
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-top: 2rem;
+    text-transform: uppercase;
+
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
+.btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+
+.order form{
+            max-width:90rem;
+            border-radius: .5rem;
+            box-shadow: var(--box-shadow);
+            border:.1rem solid rgba(0,0,0,.2);
+            background:#fff;
+            padding:1.5rem;
+            margin:0 auto;
+        }
+        
+        .order form .inputBox{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .order form .inputBox .input{
+            width: 49%;
+
+        }
+        .order form .inputBox .input span{
+            display:block;
+            padding:.5rem 0;
+            font-size: 1.5rem;
+            color:light-color;
+        }
+        .order form .inputBox .input input,
+        .order form .inputBox .input textarea{
+            background:#eee;
+            border-radius: .5rem;
+            padding:1rem;
+            font-size: 1.6rem;
+            color:black;
+            text-transform:none;
+            margin-bottom: 1rem;
+            width:100%;
+            
+        }
+
+        .order form .inputBox .input input input:focus,
+        .order form .inputBox .input textarea:focus{
+            border: .1rem solid var(--green);
+        }
+
+        .order form .inputBox .input textarea{
+            height:20rem;
+            resize:none;
+        }
+        .order form .inputBox .btn{
+             margin-top: 0;
+        }
+    
+        @media (max-width:991px)
+{
+    html{
+        font-size: 55%;
+        
+    }
+    header{
+     padding: 1rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+
+
+}
+@media (max-width:768px){
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+
+    header .navbar.active{
+        clip-path:polygon(0 0,100% 0,100% 100%,0% 100%) ;
+    }
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+
+    #search-form #search-box{
+        width: 90%;
+        margin: 0 1rem;
+    }
+
+    .home .home-slider .slide .content h3{
+        font-size: 5rem;
+    }
+}
+
+@media (max-width:450px)
+{
+    html{
+        font-size: 50%;
+        
+    }
+
+    .dishes .box-container .box img{
+        height: auto;
+        width: 100%;
+    }
+
+    .order form .inputBox .input{
+    width: 100%;
+    }
+
+
+}
+.A{
+    background: white;
+}
+body{
+  background-image: url(denise-chan-IyH6ePGolyc-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-clip: unset;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+    </style>
+</head>
+<body>
+    <section class="order" id="order">
+        <div class="A">
+            <h1 class="heading">free and fast</h1>
+            <br><br>
+        </div>
+        <br><br><br><br>
+     <div class="B">
+        <form action="" onsubmit="c()">
+    
+            <div class="inputBox">
+                <div class="input">
+                   <span>Your name</span>
+                   <input type="text" id="name"  placeholder="enter your name"> 
+                </div>
+
+                <!-- <input type="text" name="mobile" id="mobile" placeholder="Your Mobile Number" pattern="\\d{10}" maxlength="10" required> -->
+
+                <div class="input">
+                    <span>Your number</span>
+                    <input type="number" id="number" placeholder="enter your number"pattern="\\d{10}" maxlength="10" required> 
+                 </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                   <span>Your order</span>
+                   <input type="text" id="order" placeholder="enter food name"> 
+                </div>
+                <div class="input">
+                    <span>additional food</span>
+                    <input type="text" id="food" placeholder="extra with food"> 
+                 </div>
+                 <div class="inputBox">
+                    <div class="input">
+                       <span>how much</span>
+                       <input type="number" id="much" placeholder="how many orders"> 
+                    </div>
+                    <div class="input">
+                        <span>date and time</span>
+                        <input id="date" type="datetime-local"> 
+                     </div>
+                     <div class="inputBox">
+                        <div class="input">
+                        <span>Your address</span>
+                        <textarea name="" placeholder="enter your address" id="address" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="input">
+                            <span>Your message</span>
+                            <textarea name="" placeholder="enter your message" id="message" cols="30" rows="10"></textarea>
+                         </div>
+                    </div>
+    
+                    <input type="submit" value="placeorder" class="btn">
+                </div>
+            </div>
+                    </form>
+                </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

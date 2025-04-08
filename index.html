@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hotel Website</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="mainstyle.css">
+</head>
+<body>
+
+
+   <header class="header">
+
+      <a href="#" class="logo"> <i class="fas fa-hotel"></i> RR </a>
+
+      <nav class="navbar">
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#room">Room</a>
+         <a href="uiproject.html">Restaurant</a>
+         <a href="#gallery">Gallery</a>
+         <a href="#review">Review</a>
+         <a href="#faq">FAQ</a>
+         <a href="booking.html">Book now</a>
+         <a href="signinandup.html" class="btn">Log In</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </header>
+
+   <section class="home" id="home">
+
+      <div class="swiper home-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(images/home-slide1.jpg) ;">
+               <div class="content">
+                  <h3>The Grandness lies here.</h3>
+                  <a href="#" class="btn"> Visit our offer</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-slide2.jpg) ;">
+               <div class="content">
+                  <h3>it's where dreams come true</h3>
+                  <a href="#" class="btn"> Visit our offer</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-slide3.jpg) ;">
+               <div class="content">
+                  <h3>Relive the every moment by staying here.</h3>
+                  <a href="#" class="btn"> Visit our offer</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-slide4.jpg) ;">
+               
+               <div class="content">
+                  <h3>You are our Family.</h3>
+                  <a href="#" class="btn"> Visit our offer</a>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+
+      </div>
+
+   </section>
+
+   <section class="availability">
+
+      <form action="">
+
+         <div class="box">
+            <p>Check In <span>*</span></p>
+            <input type="date" class="input" id="date1">
+         </div>
+
+         <div class="box">
+            <p>Check Out <span>*</span></p>
+            <input type="date" class="input" id="date2">
+         </div>
+
+         <div class="box">
+            <p>Adults <span>*</span></p>
+            <select name="adults" id="" class="input">
+               <option value="1">1 Adults</option>
+               <option value="2">2 Adults</option>
+               <option value="3">3 Adults</option>
+               <option value="4">4 Adults</option>
+               <option value="5">5 Adults</option>
+               <option value="6">6 Adults</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>Children <span>*</span></p>
+            <select name="child" id="" class="input">
+               <option value="0">0 Child</option>
+               <option value="1">1 Child</option>
+               <option value="2">2 Child</option>
+               <option value="3">3 Child</option>
+               <option value="4">4 Child</option>
+               <option value="5">5 Child</option>
+               <option value="6">6 Child</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>Rooms <span>*</span></p>
+            <select name="rooms" id="" class="input">
+               <option value="1">1 Rooms</option>
+               <option value="2">2 Rooms</option>
+               <option value="3">3 Rooms</option>
+               <option value="4">4 Rooms</option>
+               <option value="5">5 Rooms</option>
+               <option value="6">6 Rooms</option>
+            </select>
+         </div>
+
+         <input type="submit" value="Check Availability" class="btn" onclick="return checka()">
+
+      </form>
+
+   </section>
+
+   <section class="about" id="about">
+
+      <div class="row">
+
+         <div class="image">
+            <img src="images/about.jpg" alt="">
+         </div>
+
+         <div class="content">
+            <h3>About Us</h3>
+            <p>Welcome to our exceptional hotel, where luxury and comfort intertwine for an unforgettable experience. With a rich heritage of hospitality, we deliver excellence in every aspect of your stay. Situated in a prime location, our hotel offers unparalleled access to the vibrant city.
+               Our elegant rooms provide relaxation with modern amenities and plush furnishings. Indulge in our diverse culinary offerings, from fine dining to casual options. Our stylish bars offer expertly crafted cocktails and stunning city views.
+               Rejuvenate in our top-notch wellness facilities, including a pool, spa treatments, and a state-of-the-art gym.
+               Experience our greatness, where every detail exceeds expectations. Discover the epitome of hospitality and create lifelong memories.</p>
+         </div>
+
+      </div>
+
+   </section>
+
+   <section class="room" id="room">
+
+      <h1 class="heading">Our Room</h1>
+
+      <div class="swiper room-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">₹7000/night</span>
+                  <img src="images/room-1.jpg" alt="">
+                  <a href="booking.html" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Presidential Suite</h3>
+                  <p>Our grandest accommodation, the presidential suite, exudes sophistication and grandeur, providing an unparalleled level of luxury and exclusivity.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="booking.html" class="btn">Book Now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">₹4000/night</span>
+                  <img src="images/room-2.jpg" alt="">
+                  <a href="booking.html" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Family Room</h3>
+                  <p>Perfect for families, our family rooms offer ample space and thoughtful amenities to ensure a comfortable stay for everyone.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="booking.html" class="btn">Book Now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">₹1000/night</span>
+                  <img src="images/room-3.jpg" alt="">
+                  <a href="booking.html" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Standard Room</h3>
+                  <p>Our comfortable and well-appointed standard rooms offer all the essential amenities for a pleasant stay.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="booking.html" class="btn">Book Now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">₹2500/night</span>
+                  <img src="images/room-4.jpg" alt="">
+                  <a href="booking.html" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Deluxe Room</h3>
+                  <p>ndulge in the spaciousness and luxury of our deluxe rooms, featuring upgraded amenities and elegant decor.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="booking.html" class="btn">Book Now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">₹2000/night</span>
+                  <img src="images/room-5.jpg" alt="">
+                  <a href="booking.html" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Suite</h3>
+                  <p>Experience ultimate luxury in our exquisite suites, where separate living areas and opulent furnishings create a truly lavish retreat.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="booking.html" class="btn">Book Now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">₹2000/night</span>
+                  <img src="images/room-6.jpg" alt="">
+                  <a href="booking.html" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Executive Room</h3>
+                  <p>Designed for the discerning business traveler, our executive rooms provide a productive workspace and enhanced amenities.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="booking.html" class="btn">Book Now</a>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-pagination"></div>
+
+      </div>
+
+   </section>
+
+   <section class="services">
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="images/service1.png" alt="">
+            <h3>Swimming Pool</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service2.png" alt="">
+            <h3>Food & Drink</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service3.png" alt="">
+            <h3>Restaurant</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service4.png" alt="">
+            <h3>Fitness</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service5.png" alt="">
+            <h3>Beauty Spa</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service6.png" alt="">
+            <h3>Resort Beach</h3>
+         </div>
+
+      </div>
+
+   </section>
+
+   <section class="gallery" id="gallery">
+
+      <h1 class="heading">Our Gallery</h1>
+
+      <div class="swiper gallery-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <img src="images/gallery1.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/gallery2.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/gallery3.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/gallery4.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/gallery5.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/gallery6.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+         </div>
+
+      </div>
+
+   </section>
+
+   <section class="review" id="review">
+
+      <div class="swiper review-slider">
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">client's review</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>"The hotel exceeded my expectations with exceptional service and comfort."</p>
+               <div class="user">
+                  <img src="images/pic-1.png" alt="">
+                  <div class="user-info">
+                     <h3>Stefan Forbes</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">client's review</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>Amazing hotel experience! The staff was friendly and accommodating.</p>
+               <div class="user">
+                  <img src="images/pic-2.png" alt="">
+                  <div class="user-info">
+                     <h3>Rebekah Mikaelson</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">client's review</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>Highly recommend this hotel for its luxurious amenities and cleanliness.</p>
+               <div class="user">
+                  <img src="images/pic-3.png" alt="">
+                  <div class="user-info">
+                     <h3>Ryan Brook</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">client's review</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>Highly recommend this hotel for its luxurious amenities and cleanliness.</p>
+               <div class="user">
+                  <img src="images/pic-4.png" alt="">
+                  <div class="user-info">
+                     <h3>Caroline Forbes</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <div class="swiper-pagination"></div>
+      </div>
+
+   </section>
+
+   <section class="faqs" id="faq">
+
+      <h1 class="heading">Frequently Asked Questions</h1>
+
+      <div class="row">
+
+         <div class="image">
+            <img src="images/FAQs.gif" alt="">
+         </div>
+
+         <div class="content">
+
+            <div class="box active">
+               <h3>what are payment methods?</h3>
+               <p>Credit/Debit Cards, Net Banking</p>
+            </div>
+
+            <div class="box">
+               <h3>What time is check-in and check-out?</h3>
+               <p>Check-in is usually at 3:00 PM, and check-out is at 11:00 AM.</p>
+            </div>
+
+            <div class="box">
+               <h3>Do the rooms have a minibar?</h3>
+               <p>Yes, most rooms are equipped with a minibar for guests' convenience.</p>
+            </div>
+
+            <div class="box">
+               <h3>Can I request a late check-out?</h3>
+               <p>Late check-out is subject to availability and may incur an additional fee.</p>
+            </div>
+
+            <div class="box">
+               <h3>Do you have a shuttle service to the airport?</h3>
+               <p>Late check-out is subject to availability and may incur an additional fee.</p>
+            </div>
+
+         </div>
+
+      </div>
+
+   </section>
+
+   <section class="footer">
+
+      <div class="box-container">
+
+         <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +91 9876543210 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +91 9988776655</a>
+            <a href="mailto:info@rrhotels.com"> <i class="fas fa-envelope"></i><small>info@rrhotels.com</small></a>
+            <a href="#"> <i class="fas fa-map"></i>Kochi, Kerala, India</a>
+         </div>
+
+         <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Home</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> About</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Rooms</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Gallery</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Reservation</a>
+         </div>
+
+      </div>
+
+      <div class="share">
+         <a href="#" class="fab fa-facebook-f"></a>
+         <a href="#" class="fab fa-instagram"></a>
+         <a href="#" class="fab fa-twitter"></a>
+         <a href="#" class="fab fa-pinterest"></a>
+      </div>
+
+      <div class="credit">&copy; Copyright @ 2023 by <span>RR Hotels</span></div>
+
+   </section>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+   <script src="mainscript.js"></script>
+
+</body>
+</html>
