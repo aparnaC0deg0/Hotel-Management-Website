@@ -29,7 +29,7 @@ A simple and responsive **Hotel Management System** built using **HTML, CSS, and
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/rishikreddycheruku/Hotel-Management-System.git
+  https://github.com/aparnaC0deg0/Hotel-Management-Website.git
    ```
 2. Open `index.html` in your browser to get started.
 3. Navigate between Booking and Food Order pages.
